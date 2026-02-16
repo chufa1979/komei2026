@@ -62,7 +62,13 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__bg"></div>
+    <div class="hero__bg">
+      <picture>
+        <source media="(max-width: 480px)" srcset="img/1_home-400.jpg">
+        <source media="(max-width: 900px)" srcset="img/1_home-800.jpg">
+        <img src="img/1_home-1920.jpg" alt="Manos sosteniendo la tsuka de una katana" class="hero__bg-img">
+      </picture>
+    </div>
     <div class="hero__content">
       <p class="hero__school-jp">無双直伝英信流居合術</p>
       <h1 class="hero__title">Komei Juku<br><em>Argentina</em></h1>
@@ -91,9 +97,10 @@
           <a href="komei-juku.html" class="btn btn--small" style="margin-top: 1rem;">Leer más</a>
         </div>
         <div class="about-preview__image reveal reveal--delay-2">
-          <div class="img-placeholder">
-            <span>居合</span>
-          </div>
+          <picture>
+            <source media="(max-width: 480px)" srcset="img/2_home-400.jpg">
+            <img src="img/2_home-800.jpg" alt="Katana siendo desenvainada, con el mon de Komei Juku visible" loading="lazy">
+          </picture>
         </div>
       </div>
     </div>
