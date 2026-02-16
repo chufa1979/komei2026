@@ -1029,7 +1029,7 @@ p {
 
 .prose h2 {
   color: var(--washi);
-  margin: 3rem 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .prose h3 {
