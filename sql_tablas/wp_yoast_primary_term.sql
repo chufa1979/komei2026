@@ -1,0 +1,72 @@
+-- Generado a partir de komeiworpress.sql
+-- Tabla: wp_yoast_primary_term
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+DROP TABLE IF EXISTS `wp_yoast_primary_term`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wp_yoast_primary_term` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `post_id` bigint(20) DEFAULT NULL,
+  `term_id` bigint(20) DEFAULT NULL,
+  `taxonomy` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `blog_id` bigint(20) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  KEY `post_taxonomy` (`post_id`,`taxonomy`),
+  KEY `post_term` (`post_id`,`term_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wp_yoast_primary_term`
+--
+
+LOCK TABLES `wp_yoast_primary_term` WRITE;
+/*!40000 ALTER TABLE `wp_yoast_primary_term` DISABLE KEYS */;
+INSERT  IGNORE INTO `wp_yoast_primary_term` VALUES (1,3395,2,'category','2024-09-01 14:55:15','2024-09-01 17:55:15',1),(2,3495,23,'category','2024-09-01 15:58:40','2024-09-01 18:58:40',1),(3,3415,23,'category','2024-09-01 15:58:40','2024-09-01 18:58:40',1),(4,3444,23,'category','2024-09-01 15:58:40','2024-09-01 18:58:40',1),(5,3385,4,'category','2024-09-01 15:58:40','2024-09-01 18:58:40',1),(6,3338,4,'category','2024-09-01 15:58:40','2024-09-01 18:58:40',1),(7,3353,4,'category','2024-09-01 15:58:41','2024-09-01 18:58:41',1),(8,2344,23,'category','2024-09-01 15:58:41','2024-09-01 18:58:41',1),(9,2750,3,'category','2024-09-01 15:58:41','2024-09-01 18:58:41',1),(10,3148,23,'category','2024-09-01 15:58:41','2024-09-01 18:58:41',1),(11,3367,4,'category','2024-09-01 15:58:41','2024-09-01 18:58:41',1),(12,3360,4,'category','2024-09-01 15:58:42','2024-09-01 18:58:42',1),(13,3132,23,'category','2024-09-01 16:13:50','2024-09-01 19:13:50',1),(14,1940,23,'category','2024-09-02 13:28:43','2024-09-02 16:28:43',1),(15,2002,23,'category','2024-09-02 13:28:43','2024-09-02 16:28:43',1),(16,2058,23,'category','2024-09-02 13:43:43','2024-09-02 16:43:43',1),(17,2402,23,'category','2024-09-02 13:43:43','2024-09-02 16:43:43',1),(18,2537,23,'category','2024-09-02 15:28:43','2024-09-02 18:28:43',1),(19,2616,23,'category','2024-09-02 15:28:43','2024-09-02 18:28:43',1),(20,2641,23,'category','2024-09-02 15:28:43','2024-09-02 18:28:43',1),(21,2743,23,'category','2024-09-02 15:43:36','2024-09-02 18:43:36',1),(22,2858,23,'category','2024-09-02 15:43:36','2024-09-02 18:43:36',1),(23,2884,23,'category','2024-09-02 15:58:44','2024-09-02 18:58:44',1),(24,2915,23,'category','2024-09-02 15:58:44','2024-09-02 18:58:44',1),(25,3027,23,'category','2024-09-02 16:13:38','2024-09-02 19:13:38',1),(26,2984,23,'category','2024-09-02 16:13:38','2024-09-02 19:13:38',1),(27,3214,23,'category','2024-09-02 16:13:38','2024-09-02 19:13:38',1),(28,3122,23,'category','2024-09-02 16:43:36','2024-09-02 19:43:36',1),(29,3280,23,'category','2024-09-02 16:43:36','2024-09-02 19:43:36',1),(30,3307,23,'category','2024-09-02 16:58:39','2024-09-02 19:58:39',1),(31,3313,23,'category','2024-09-02 16:58:39','2024-09-02 19:58:39',1),(32,3317,23,'category','2024-09-02 16:58:39','2024-09-02 19:58:39',1),(33,3320,23,'category','2024-09-02 21:20:35','2024-09-03 00:20:35',1),(34,3310,23,'category','2024-09-02 21:20:36','2024-09-03 00:20:36',1),(35,3324,3,'category','2024-09-02 21:28:38','2024-09-03 00:28:38',1),(36,3356,4,'category','2024-09-02 21:43:50','2024-09-03 00:43:50',1);
+/*!40000 ALTER TABLE `wp_yoast_primary_term` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+-- MySQL dump 10.13  Distrib 5.5.62, for Linux (x86_64)
+--
+-- Host: localhost    Database: komeiworpress
+-- ------------------------------------------------------
+-- Server version	5.5.62
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `wp_yoast_seo_links`
+--
+
+
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Komei Juku Argentina</title>
+  <meta name="description" content="Contactanos para comenzar a practicar Iaijutsu en Komei Juku Argentina.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="nav-overlay"></div>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="img/komei-logo.png" alt="Komei Juku Mon" class="nav__logo-mon">
+        Komei Juku Argentina
+      </a>
+      <button class="nav__hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+      <ul class="nav__links">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">Sensei</a>
+          <ul class="nav__dropdown"><li><a href="sensei.html" class="nav__dropdown-link">Sekiguchi Sensei</a></li></ul>
+        </li>
+        <li class="nav__item nav__item--has-dropdown">
+          <a href="#" class="nav__link">Historia</a>
+          <ul class="nav__dropdown">
+            <li><a href="komei-juku.html" class="nav__dropdown-link">Komei Juku</a></li>
+            <li><a href="linaje.html" class="nav__dropdown-link">Linaje</a></li>
+            <li><a href="katas.html" class="nav__dropdown-link">Katas</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="galeria.html" class="nav__link">Galería</a></li>
+        <li class="nav__item"><a href="dojos.html" class="nav__link">Dojos</a></li>
+        <li class="nav__item"><a href="cultura.html" class="nav__link">Cultura</a></li>
+        <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container page-header__content">
+      <span class="page-header__label">Escribinos</span>
+      <h1 class="page-header__title">Contacto</h1>
+      <div class="page-header__line"></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="reveal">
+          <h2 style="font-family: var(--ff-display); font-size: 1.8rem; margin-bottom: 0.5rem;">Envianos un mensaje</h2>
+          <p style="margin-bottom: 2rem; font-size: 0.9rem; color: var(--ink-light);">Completá el formulario y te contactaremos a la brevedad. También podés escribirnos directamente por WhatsApp.</p>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input type="text" id="asunto" name="asunto" placeholder="Ej: Consulta sobre clases">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required placeholder="Escribí tu consulta..."></textarea>
+            </div>
+            <button type="submit" class="btn">
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+
+        <!-- Info + Map -->
+        <div class="reveal reveal--delay-2">
+          <h2 style="font-family: var(--ff-display); font-size: 1.8rem; margin-bottom: 1.5rem;">Información</h2>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-info__text">
+              <h4>Dirección</h4>
+              <p>Av. de los Constituyentes 4584<br>Ciudad Autónoma de Buenos Aires</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-info__text">
+              <h4>Teléfono / WhatsApp</h4>
+              <p><a href="https://wa.me/5491130571014" target="_blank" rel="noopener" style="color: var(--gold);">+54 911 3057 1014</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-info__text">
+              <h4>Email</h4>
+              <p><a href="mailto:dariovega@komeijuku.com.ar" style="color: var(--gold);">dariovega@komeijuku.com.ar</a></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <iframe
+              class="dojo-detail__map"
+              style="height: 300px;"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5!2d-58.5095!3d-34.5767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM0JzM2LjEiUyA1OMKwMzAnMzQuMiJX!5e0!3m2!1ses!2sar!4v1"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Komei Juku Argentina</h3>
+          <p>Escuela de Muso Jikiden Eishin Ryu Iaijutsu bajo la dirección del 21° Soke, Sekiguchi Takaaki Komei Sensei.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navegación</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sensei.html">Sensei</a></li>
+            <li><a href="komei-juku.html">Komei Juku</a></li>
+            <li><a href="dojos.html">Dojos</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Escuela</h4>
+          <ul class="footer__links">
+            <li><a href="linaje.html">Linaje</a></li>
+            <li><a href="katas.html">Katas</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="cultura.html">Cultura Japonesa</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contacto</h4>
+          <ul class="footer__links">
+            <li>Av. de los Constituyentes 4584</li>
+            <li>Ciudad Autónoma de Buenos Aires</li>
+            <li><a href="tel:+5491130571014">+54 911 3057 1014</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2026 Komei Juku Argentina. Todos los derechos reservados.</span>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/komeiJukuArgentina" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.youtube.com/user/KomeiJukuArgentina" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" fill="#0a0a0a"/></svg></a>
+          <a href="https://www.instagram.com/komeijuku" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="#0a0a0a"/><circle cx="17.5" cy="6.5" r="1" fill="#0a0a0a"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

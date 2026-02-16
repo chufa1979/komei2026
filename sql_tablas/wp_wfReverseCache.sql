@@ -1,0 +1,66 @@
+-- Generado a partir de komeiworpress.sql
+-- Tabla: wp_wfReverseCache
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+DROP TABLE IF EXISTS `wp_wfReverseCache`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wp_wfReverseCache` (
+  `IP` binary(16) NOT NULL DEFAULT '\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0',
+  `host` varchar(255) NOT NULL,
+  `lastUpdate` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`IP`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wp_wfReverseCache`
+--
+
+LOCK TABLES `wp_wfReverseCache` WRITE;
+/*!40000 ALTER TABLE `wp_wfReverseCache` DISABLE KEYS */;
+INSERT  IGNORE INTO `wp_wfReverseCache` VALUES ('\0\0\0\0\0\0\0\0\0\0��B�B&','crawl-66-249-66-38.googlebot.com',1697979290),('\0\0\0\0\0\0\0\0\0\0��B�B\'','crawl-66-249-66-39.googlebot.com',1698044283),('\0\0\0\0\0\0\0\0\0\0��B�BH','crawl-66-249-66-72.googlebot.com',1697975710),('\0\0\0\0\0\0\0\0\0\0��B�BI','crawl-66-249-66-73.googlebot.com',1697965880),('\0\0\0\0\0\0\0\0\0\0��B�BJ','crawl-66-249-66-74.googlebot.com',1698011225);
+/*!40000 ALTER TABLE `wp_wfReverseCache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+-- MySQL dump 10.13  Distrib 5.5.62, for Linux (x86_64)
+--
+-- Host: localhost    Database: komeiworpress
+-- ------------------------------------------------------
+-- Server version	5.5.62
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `wp_wfSNIPCache`
+--
+
+
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

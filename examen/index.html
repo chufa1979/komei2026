@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kata | Muso Jikiden Eishin Ryu Komei Juku</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <div class="container-fluid">
+            <img src="images/isshin-800.5a912465.png" class="mx-auto d-block w-50 p-3 mt-2" alt="Responsive image">
+          
+            <form id="form1" name="form1" method="post" action="resultado.php">
+                
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Seleccione los grupos de Kata que desea</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="shoden" name="shoden" value="1">
+                  <label class="form-check-label" for="shoden">Shoden</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="chuden" name="chuden" value="1">
+                  <label class="form-check-label" for="chuden">Chuden</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="okudeni" name="okudeni" value="1">
+                  <label class="form-check-label" for="okudeni">Okuden Iwaza</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="okudent" name="okudent" value="1">
+                  <label class="form-check-label" for="okudent">Okuden Tachiwaza</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="itomagoi" name="itomagoi" value="1">
+                  <label class="form-check-label" for="itomagoi">Itomagoi</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="bangai" name="bangai" value="1">
+                  <label class="form-check-label" for="bangai">Bangai - Sanbon Me no Kata</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="toryu" name="toryu" value="1">
+                  <label class="form-check-label" for="toryu">Toryu-Bangai - Gohon Me no Kata</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="kumitachi" name="kumitachi" value="1">
+                  <label class="form-check-label" for="kumitachi">Kumitachi - Nanhon Me no Kata (SHITACHI)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="kumitachi2" name="kumitachi2" value="1">
+                  <label class="form-check-label" for="kumitachi2">Kumitachi - Nanhon Me no Kata (UCHITACHI)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="tsume" name="tsume" value="1">
+                  <label class="form-check-label" for="tsume">Tsume-Iai (SHITACHI)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="tsume2" name="tsume2" value="1">
+                  <label class="form-check-label" for="tsume2">Tsume-Iai (UCHITACHI)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="hayanuki" name="hayanuki" value="1">
+                  <label class="form-check-label" for="hayanuki">Chuden no Hayanuki</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="hayanukidori" name="hayanukidori" value="1">
+                  <label class="form-check-label" for="hayanukidori">Chuden no Hayanuki Katadori</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="hayanukikatate" name="hayanukikatate" value="1">
+                  <label class="form-check-label" for="hayanukikatate">Chuden no Hayanuki Katate</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="ran" name="ran" value="1">
+                  <label class="form-check-label" for="ran">RAN</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="toho" name="toho" value="1">
+                  <label class="form-check-label" for="toho">TOHO</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="todo" name="todo" value="1" onclick="seleccionar_todo();">
+                  <label class="form-check-label" for="todo">SELECCIONAR TODO</label>
+                </div>
+<br>
+                <button type="submit" class="btn btn-primary">Seleccionar</button>
+              </form>
+        </div>
+      </div>
+      <script>
+      function seleccionar_todo(){ 
+        for (i=0;i<document.form1.elements.length;i++) 
+            if(document.form1.elements[i].type == "checkbox")	
+                document.form1.elements[i].checked=1 
+        } 
+</script>
+</body>
+</html>
